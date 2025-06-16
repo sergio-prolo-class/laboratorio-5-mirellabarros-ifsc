@@ -3,12 +3,13 @@
  */
 package ifsc.poo;
 
+import ifsc.poo.nave.modelos.NaveEspacial;
+import ifsc.poo.nave.modelos.NaveExploradora;
+
 public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        NaveEspacial n = new NaveExploradora();
+        System.out.println(n.getVelocidadeMaxima());
     }
 }
